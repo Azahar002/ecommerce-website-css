@@ -1,0 +1,198 @@
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --FONT-SIZE : 50px;
+    --MARGIN : 25px;
+    --AJIO-BG-COLOR : #98b9bb;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.nowrap {
+    white-space: nowrap;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li { /* to make nav-list horizontal */
+    display: inline-block;
+    margin: var(--MARGIN);
+}
+
+a {
+   text-decoration: none; 
+   color: #555;
+}
+
+p {
+    color: #555;
+}
+
+
+.container {   
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+}
+/* adds equal space to logo and nav bar from left and right side of the page */
+
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: var(--FONT-SIZE);
+    margin: var(--MARGIN) 0;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--AJIO-BG-COLOR);
+    color: black;
+    padding: 8px 30px;
+    margin: var(--MARGIN) 0;
+    border-radius: 30px;
+    border-style: groove;
+    transition: 1s;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+.header {
+    background: radial-gradient(white, var(--AJIO-BG-COLOR)) ;
+}
+
+/* .header .row {
+    margin-top: 70px;
+} */
+
+
+/* ------CATAGORIES------ */
+
+
+.catagoires{
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+
+}
+.col-4 img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+
+}
+.title::after {
+    content: '';
+    background:var(--AJIO-BG-COLOR);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+
+    /* to keep it center from x-axis */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p {
+    font-size: small;
+}
+
+.rating .fa {
+    color: #ff523b;
+
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ---------offer-- */
+
+.offer {
+    background: radial-gradient(white, var(--AJIO-BG-COLOR)) ;
+    margin-top: 80px;
+    padding: 30px 0;
+
+}
+
+.col-2 .offer-img {
+    padding: 50px;
+}
+small {
+    color: rgb(40, 40, 40);
+}
+
+
+/* continue from 50:00 -- testimonial */
