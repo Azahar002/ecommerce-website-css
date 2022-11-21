@@ -465,6 +465,166 @@ input:focus {
     cursor: pointer;
 }
 
+/* <!-- ---------CART ITEMS details --------    --> */
+
+.cart-page {
+    margin: 80px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+th {
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: var(--AJIO-BG-COLOR);
+    font-weight: normal;
+}
+
+td {
+    padding: 10px 5px;
+
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;  
+}
+
+td a {
+    color: var(--AJIO-BG-COLOR);
+    font-size: 12px;
+    transition: 0.5s;
+
+}
+
+td a:hover{
+    font-weight: 500;
+    color: #555;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid var(--AJIO-BG-COLOR);
+    width: 100%;
+    max-width: 400px;
+
+}
+
+td:last-child {
+    text-align: right;
+
+}
+th:last-child {
+    text-align: right;
+}
+
+
+/* --------account page ---  */
+
+.account-page{
+    padding: 50px 0;
+    background: radial-gradient(white, var(--AJIO-BG-COLOR)) ;
+}
+
+.form-container {
+    background: white;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin:auto ;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden; /* to hid xtra form */
+
+}
+
+.form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form{
+max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: 1s;
+    
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+
+}
+form .btn:focus {
+    outline: none;
+}
+
+#LoginForm {
+    left: -300px;
+}
+
+#RegForm {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: var(--AJIO-BG-COLOR);
+    height: 3px;
+    margin-top: 8px ;
+    transform: translateX(100px);
+    transition: 1s;
+}
+
+
 
 /* --------MEDIA Query for lss than 600screen size --- */
 
@@ -487,6 +647,9 @@ input:focus {
         font-size: 26px;
         line-height: 36px;
 
+    }
+    .cart-info p {
+        display: none;
     }
 }
 
